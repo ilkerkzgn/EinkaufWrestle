@@ -79,6 +79,7 @@
         android:id="@+id/button_signin_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="signIn"
         android:text="Sign In with Google"
         app:layout_constraintBottom_toTopOf="@+id/einkaufwagen_top4"
         app:layout_constraintEnd_toEndOf="parent"

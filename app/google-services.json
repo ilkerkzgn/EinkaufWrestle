@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576151217475",
+    "project_id": "einkaufwrestle",
+    "storage_bucket": "einkaufwrestle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576151217475:android:cf69ad3b046311b9113bf6",
+        "android_client_info": {
+          "package_name": "com.example.einkaufwrestle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576151217475-ehq162ug1h638p9ghii1d4p3vhqlho6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChEYpemIs2fFFYFH7xPBu7fK1qBi7DBjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576151217475-ehq162ug1h638p9ghii1d4p3vhqlho6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
