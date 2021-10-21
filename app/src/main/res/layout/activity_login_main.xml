@@ -18,9 +18,9 @@
 
     <ImageView
         android:id="@+id/einkaufwagen_top"
-        android:layout_width="419dp"
+        android:layout_width="wrap_content"
         android:layout_height="76dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="50dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -30,11 +30,12 @@
 
     <ImageView
         android:id="@+id/einkaufwagen_top2"
-        android:layout_width="419dp"
+        android:layout_width="0dp"
         android:layout_height="76dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top"
         app:srcCompat="@drawable/einkaufwagen" />
@@ -43,66 +44,45 @@
         android:id="@+id/einkaufwagen_top3"
         android:layout_width="419dp"
         android:layout_height="76dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="65dp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/einkaufwagen_top4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top2"
         app:srcCompat="@drawable/einkaufwagen" />
 
     <ImageView
         android:id="@+id/einkaufwagen_top4"
-        android:layout_width="419dp"
+        android:layout_width="0dp"
         android:layout_height="76dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top3"
-        app:srcCompat="@drawable/einkaufwagen" />
-
-    <ImageView
-        android:id="@+id/einkaufwagen_top5"
-        android:layout_width="419dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top4"
-        app:srcCompat="@drawable/einkaufwagen" />
-
-    <ImageView
-        android:id="@+id/einkaufwagen_top6"
-        android:layout_width="419dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="50dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top5"
         app:srcCompat="@drawable/einkaufwagen" />
 
     <ImageView
         android:id="@+id/mainlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/grey_rectangle"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/grey_rectangle"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mainlogo" />
+        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top"
+        app:srcCompat="@drawable/mainlogo"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/button_signin_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:text="Sign In with Google"
-        app:layout_constraintBottom_toTopOf="@+id/einkaufwagen_top6"
+        app:layout_constraintBottom_toTopOf="@+id/einkaufwagen_top4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/einkaufwagen_top3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
