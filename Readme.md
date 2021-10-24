@@ -10,3 +10,4 @@ As an international student in Germany and as a person who doesn't speak German 
 
  ## Screenshots
 <a href='https://postimg.cc/gnT7t0K2' target='_blank'><img src='https://i.postimg.cc/gnT7t0K2/Screenshot-1634853239.png' border='0' alt='Screenshot-1634853239'/></a>
+<a href='https://postimg.cc/Lg3GLbj4' target='_blank'><img src='https://i.postimg.cc/Lg3GLbj4/Screenshot-1635114859.png' border='0' alt='Screenshot-1635114859'/></a>
