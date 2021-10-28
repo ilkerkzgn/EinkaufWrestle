@@ -9,9 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
@@ -21,6 +24,9 @@ public class Login_main extends AppCompatActivity {
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
     private GoogleSignInClient mGoogleSignInClient;
+
+
+    private Button button_signin_google;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +45,20 @@ public class Login_main extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
+        /*GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        updateUI(account);*/
+    }
 
     //SIGN IN BUTTON - LOGIN PAGE
-    public void signIn (){
+    public void signIn (View view){
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
-
-
 
     }
 }
